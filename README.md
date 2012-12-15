@@ -9,6 +9,12 @@ GentleFace (http://www.gentleface.com/free_icon_set.html).
 
 ![Screenshot](https://raw.github.com/tlhunter/thomashunter.name/master/screenshot.png)
 
+# Wordpress Settings
+
+* Disable emoticons
+* Disable toolbar
+* Homepage listing of last X blogposts
+
 # Pitfalls
 
 A lot of things are hard coded right now (e.g. navigations). It would be kickass if

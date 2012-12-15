@@ -1,4 +1,5 @@
 <?php
+$current_page_override = 'home';
 get_header();
 
 if (have_posts()) {

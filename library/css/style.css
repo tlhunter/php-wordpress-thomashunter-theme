@@ -58,7 +58,6 @@ nav ul li a span {
 #dock-posts .icon { background-image: url("../images/dock/posts-32.png"); }
 #dock-projects .icon { background-image: url("../images/dock/projects-32.png"); }
 #dock-about .icon { background-image: url("../images/dock/about-32.png"); }
-#dock-contact .icon { background-image: url("../images/dock/contact-32.png"); }
 #dock-search .icon { background-image: url("../images/dock/search-32.png"); }
 #dock-github .icon { background-image: url("../images/dock/github-32.png"); }
 #dock-twitter .icon { background-image: url("../images/dock/twitter-32.png"); }
@@ -97,26 +96,11 @@ nav ul li a span {
     font-size: 1.6rem;
 }
 #popup-search {
-    top: 330px;
+    top: 264px;
     height: 35px;
 }
 #popup-search #search {
     width: 23rem;
-}
-#popup-contact {
-    top: 266px;
-    width: 400px;
-}
-#contact-name,
-#contact-email,
-#contact-message {
-    width: 40rem;
-}
-#contact-message {
-    height: 18rem;
-}
-#popup-contact .submitter {
-    text-align: right;
 }
 
 /* HOMEPAGE */
@@ -171,6 +155,7 @@ article h3,
 article h4,
 article h5,
 article h6,
+article .wp-caption,
 article footer,
 article blockquote {
     margin: 0 0 1.6rem 0;
@@ -234,3 +219,14 @@ article h6 {
     font-size: 2.0rem;
 }
 
+article .aligncenter {
+    margin: 0 auto;
+    text-align: center;
+}
+article .wp-caption img {
+    margin-bottom: 0;
+}
+article .wp-caption p {
+    font-size: 1.5rem;
+    color: #999;
+}

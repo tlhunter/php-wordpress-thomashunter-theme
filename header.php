@@ -24,13 +24,18 @@
     <nav>
         <ul>
 <?php
-$slug = $wp_query->queried_object->post_name;
+$slug = '';
+global $current_page_override;
+if (isset($current_page_override)) {
+    $slug = $current_page_override;
+} else {
+    $slug = $wp_query->queried_object->post_name;
+}
 ?>
-            <li class="<?php if ($slug == '') { echo " active"; } ?>" id="dock-home"><a href="<?php echo home_url(); ?>" title="Homepage"><img alt="<?php bloginfo('name'); ?>" src="http://www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=200" /></a></li>
-            <li class="with-label<?php if ($slug == 'posts') { echo " active"; } ?>" id="dock-posts"><a title="Blogs Posts" href="<?=site_url();?>/category-index/"><div class="icon"></div><span>Posts</span></a></li>
+            <li class="<?php if ($slug == 'home') { echo " active"; } ?>" id="dock-home"><a href="<?php echo home_url(); ?>" title="Homepage"><img alt="<?php bloginfo('name'); ?>" src="http://www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=200" /></a></li>
+            <li class="with-label<?php if ($slug == 'category-index' || $slug == 'post') { echo " active"; } ?>" id="dock-posts"><a title="Blogs Posts" href="<?=site_url();?>/category-index/"><div class="icon"></div><span>Posts</span></a></li>
             <li class="with-label<?php if ($slug == 'projects') { echo " active"; } ?>" id="dock-projects"><a title="Projects by Thomas Hunter" href="<?=site_url();?>/projects"><div class="icon"></div><span>Projects</span></a></li>
             <li class="with-label<?php if ($slug == 'about') { echo " active"; } ?>" id="dock-about"><a href="<?=site_url();?>/about" title="About Thomas Hunter"><div class="icon"></div><span>About</span></a></li>
-            <li class="with-label" id="dock-contact"><a title="E-Mail Thomas Hunter" href="#"><div class="icon"></div><span>Contact</span></a></li>
             <li class="with-label<?php if ($slug == 'search') { echo " active"; } ?>" id="dock-search"><a title="Search over 300 posts" href="#"><div class="icon"></div><span>Search</span></a></li>
             <li class="with-label" id="dock-github" class="external"><a target="_blank" title="Thomas Hunter Github" href="http://github.com/tlhunter"><div class="icon"></div><span>Github</span></a></li>
             <li class="with-label" id="dock-twitter" class="external"><a target="_blank" title="Thomas Hunter Twitter" href="http://twitter.com/tlhunter"><div class="icon"></div><span>Twitter</span></a></li>
@@ -39,16 +44,8 @@ $slug = $wp_query->queried_object->post_name;
     </nav>
     <article>
         <div id="popup-search" class="popup">
-            <form action="<?=site_url();?>/search" method="post">
-                <input id="search" type="search" placeholder="Search Terms" />
+            <form action="<?=site_url();?>" method="get">
+                <input id="search" type="search" name="s" placeholder="Search Terms" />
                 <input type="submit" value="Search" />
-            </form>
-        </div>
-        <div id="popup-contact" class="popup">
-            <form action="/search" method="post">
-                <div class="fieldset"><input id="contact-name" name="name" type="text" placeholder="Name" /></div>
-                <div class="fieldset"><input id="contact-email" name="email" type="email" placeholder="Email Address" /></div>
-                <div class="fieldset"><textarea id="contact-message" name="message" placeholder="Message"></textarea></div>
-                <div class="fieldset submitter"><input type="submit" value="Send Mail" /></div>
             </form>
         </div>

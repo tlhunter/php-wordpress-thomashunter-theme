@@ -1,16 +1,18 @@
 $(function() {
-    var $popup = $('.popup');
     var $searchInput = $('#search');
+    var $search = $('#popup-search');
+    var isSearchVisible = false;
     $('#dock-search').click(function(event) {
         event.preventDefault();
-        $popup.hide();
-        $('#popup-search').show();
-        $searchInput.focus();
-    });
-    $('#dock-contact').click(function(event) {
-        event.preventDefault();
-        $popup.hide();
-        $('#popup-contact').show();
+
+        if (isSearchVisible) {
+            isSearchVisible = false;
+            $search.fadeOut('fast');
+        } else {
+            isSearchVisible = true;
+            $search.fadeIn('fast');
+            $searchInput.focus();
+        }
     });
 });
 

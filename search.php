@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+$current_page_override = 'search';
+get_header();
+?>
 			
 			<div id="content">
 
