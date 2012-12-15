@@ -119,6 +119,18 @@ nav ul li a span {
     text-align: right;
 }
 
+/* HOMEPAGE */
+#post-listing section {
+    margin-bottom: 2rem;
+}
+#post-listing section h3 {
+    margin-bottom: 0rem;
+}
+#post-listing section time {
+    font-size: 1.6rem;
+    color: #8b9aa0;
+    display: block;
+}
 
 /* CONTENT */
 article {
@@ -149,7 +161,7 @@ article footer {
 }
 
 
-/* CONTENT */
+/* FREE CONTENT */
 article p,
 article ul,
 article ol,
