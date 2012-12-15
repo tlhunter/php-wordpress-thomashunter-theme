@@ -23,20 +23,23 @@
 <body <?php body_class(); ?>>
     <nav>
         <ul>
-            <li class="" id="dock-home"><a href="<?php echo home_url(); ?>" title="Homepage"><img alt="<?php bloginfo('name'); ?>" src="http://www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=200" /></a></li>
-            <li class="with-label active" id="dock-posts"><a title="Blogs Posts" href="/category-index/"><div class="icon"></div><span>Posts</span></a></li>
-            <li class="with-label" id="dock-projects"><a title="Projects by Thomas Hunter" href="/projects"><div class="icon"></div><span>Projects</span></a></li>
-            <li class="with-label" id="dock-about"><a href="/about" title="About Thomas Hunter"><div class="icon"></div><span>About</span></a></li>
+<?php
+$slug = $wp_query->queried_object->post_name;
+?>
+            <li class="<?php if ($slug == '') { echo " active"; } ?>" id="dock-home"><a href="<?php echo home_url(); ?>" title="Homepage"><img alt="<?php bloginfo('name'); ?>" src="http://www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=200" /></a></li>
+            <li class="with-label<?php if ($slug == 'posts') { echo " active"; } ?>" id="dock-posts"><a title="Blogs Posts" href="<?=site_url();?>/category-index/"><div class="icon"></div><span>Posts</span></a></li>
+            <li class="with-label<?php if ($slug == 'projects') { echo " active"; } ?>" id="dock-projects"><a title="Projects by Thomas Hunter" href="<?=site_url();?>/projects"><div class="icon"></div><span>Projects</span></a></li>
+            <li class="with-label<?php if ($slug == 'about') { echo " active"; } ?>" id="dock-about"><a href="<?=site_url();?>/about" title="About Thomas Hunter"><div class="icon"></div><span>About</span></a></li>
             <li class="with-label" id="dock-contact"><a title="E-Mail Thomas Hunter" href="#"><div class="icon"></div><span>Contact</span></a></li>
-            <li class="with-label" id="dock-search"><a title="Search over 300 posts" href="#"><div class="icon"></div><span>Search</span></a></li>
-            <li class="with-label" id="dock-github" class="external"><a title="Thomas Hunter Github" href="http://github.com/tlhunter"><div class="icon"></div><span>Github</span></a></li>
-            <li class="with-label" id="dock-twitter" class="external"><a title="Thomas Hunter Twitter" href="http://twitter.com/tlhunter"><div class="icon"></div><span>Twitter</span></a></li>
+            <li class="with-label<?php if ($slug == 'search') { echo " active"; } ?>" id="dock-search"><a title="Search over 300 posts" href="#"><div class="icon"></div><span>Search</span></a></li>
+            <li class="with-label" id="dock-github" class="external"><a target="_blank" title="Thomas Hunter Github" href="http://github.com/tlhunter"><div class="icon"></div><span>Github</span></a></li>
+            <li class="with-label" id="dock-twitter" class="external"><a target="_blank" title="Thomas Hunter Twitter" href="http://twitter.com/tlhunter"><div class="icon"></div><span>Twitter</span></a></li>
         </ul>
         <div id="topper"><a href="#top" title="Return to Top">&#8679;&nbsp;&#8679;&nbsp;&#8679;</a></div>
     </nav>
     <article>
         <div id="popup-search" class="popup">
-            <form action="/search" method="post">
+            <form action="<?=site_url();?>/search" method="post">
                 <input id="search" type="search" placeholder="Search Terms" />
                 <input type="submit" value="Search" />
             </form>
