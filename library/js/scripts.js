@@ -1,3 +1,19 @@
+$(function() {
+    var $popup = $('.popup');
+    var $searchInput = $('#search');
+    $('#dock-search').click(function(event) {
+        event.preventDefault();
+        $popup.hide();
+        $('#popup-search').show();
+        $searchInput.focus();
+    });
+    $('#dock-contact').click(function(event) {
+        event.preventDefault();
+        $popup.hide();
+        $('#popup-contact').show();
+    });
+});
+
 /*
 Bones Scripts File
 Author: Eddie Machado
