@@ -13,7 +13,7 @@ if (have_posts()) {
         <?php the_content(); ?>
         <footer>
 <?php the_tags('<span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
-<?php print_r(get_the_category_list(', ')) ?>
+<br />Category: <?php print_r(get_the_category_list(', ')) ?>
             <h6>Comments (27)</h6>
             <?php comments_template(); ?>
         </footer>
