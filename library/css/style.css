@@ -1,0 +1,224 @@
+/* DOCUMENT */
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+
+/* SIDEBAR */
+nav {
+    height: 100%;
+    float: left;
+    width: 64px;
+    background-color: #333;
+    font-family: "Lato", "freight-sans-pro","Myriad Pro","Myriad",sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    position: fixed;
+}
+nav ul li {
+    margin-bottom: 16px;
+}
+nav ul li.active {
+    background: transparent url("../images/dock/active.png") no-repeat right 8px;
+}
+nav ul li#dock-home.active {
+    background-position: right 24px;
+}
+nav ul li a {
+    display: block;
+    color: #fafafa;
+    text-decoration: none;
+    text-shadow: rgba(0,0,0,0.5) 0px 2px 4px;
+    text-align: center;
+    text-transform: lowercase;
+}
+nav ul li a:hover {
+    color: #bcd9ff;
+}
+nav ul li .icon {
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    height: 32px;
+    margin-bottom: 4px;
+}
+nav ul li#dock-home img {
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+nav ul li a span {
+}
+#dock-posts .icon { background-image: url("../images/dock/posts-32.png"); }
+#dock-projects .icon { background-image: url("../images/dock/projects-32.png"); }
+#dock-about .icon { background-image: url("../images/dock/about-32.png"); }
+#dock-contact .icon { background-image: url("../images/dock/contact-32.png"); }
+#dock-search .icon { background-image: url("../images/dock/search-32.png"); }
+#dock-github .icon { background-image: url("../images/dock/github-32.png"); }
+#dock-twitter .icon { background-image: url("../images/dock/twitter-32.png"); }
+#topper {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+#topper a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+    border-top: 1px solid #444;
+    background-color: #333;
+}
+#topper a:hover {
+    background-color: #444;
+}
+
+/* POPUPS */
+.popup {
+    display: none;
+    position: fixed;
+    left: 80px;
+    background-color: #333;;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -1.6rem;
+    padding: 1rem;
+}
+.popup input,
+.popup textarea {
+    font-size: 1.6rem;
+}
+#popup-search {
+    top: 330px;
+    height: 35px;
+}
+#popup-search #search {
+    width: 23rem;
+}
+#popup-contact {
+    top: 266px;
+    width: 400px;
+}
+#contact-name,
+#contact-email,
+#contact-message {
+    width: 40rem;
+}
+#contact-message {
+    height: 18rem;
+}
+#popup-contact .submitter {
+    text-align: right;
+}
+
+
+/* CONTENT */
+article {
+    max-width: 100rem;
+    min-width: 20rem;
+    margin: 0 1.6rem 0 8.0rem;
+    padding: 1.6rem 0 0 0;
+    color: #4e565a;
+    font-family: "Lato", "freight-sans-pro","Myriad Pro","Myriad",sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+article header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+article header time {
+    font-size: 1.6rem;
+    color: #8b9aa0;
+    margin: 0 0 1.6rem 0;
+    display: block;
+}
+article footer {
+    border-top: 0.1rem solid #ddd;
+    padding-top: 1rem;
+}
+
+
+/* CONTENT */
+article p,
+article ul,
+article ol,
+article pre,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article footer,
+article blockquote {
+    margin: 0 0 1.6rem 0;
+}
+article ul {
+    list-style-type: circle;
+}
+article ul li {
+    margin-left: 3rem;
+}
+article p {
+}
+article img {
+    max-width: 100%;
+    margin: 0 0 1.6rem 0;
+}
+article blockquote {
+    color: #888;
+    border-left: 0.5rem solid #999;
+    padding-left: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+article a {
+    color: #006fff;
+}
+article strong,
+article b {
+    font-weight: 700;
+}
+article em,
+article i {
+    font-style: italic;
+}
+article pre {
+    font-family: Menlo, monospace;
+    font-size: 1.5rem;
+    background-color: #eee;
+    padding: 1rem 1.8rem;
+    overflow: auto;
+}
+article h2,
+article h3,
+article h4 {
+    font-weight: 700;
+}
+article h2 {
+    font-size: 2.6rem;
+    border-bottom: 0.1rem dotted #999;
+}
+article h3 {
+    font-size: 2.6rem;
+}
+article h4 {
+    font-size: 2.4rem;
+}
+article h5 {
+    font-size: 2.2rem;
+}
+article h6 {
+    font-size: 2.0rem;
+}
+

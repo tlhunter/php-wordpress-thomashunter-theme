@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Test Template</title>
+    <link rel="stylesheet" type="text/css" href="library/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="library/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+    <script src="library/js/libs/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function() {
+            var $popup = $('.popup');
+            var $searchInput = $('#search');
+            $('#dock-search').click(function(event) {
+                event.preventDefault();
+                $popup.hide();
+                $('#popup-search').show();
+                $searchInput.focus();
+            });
+            $('#dock-contact').click(function(event) {
+                event.preventDefault();
+                $popup.hide();
+                $('#popup-contact').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="" id="dock-home"><a href="/" title="Homepage"><img alt="Thomas Hunter" src="http://www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=200" /></a></li>
+            <li class="with-label active" id="dock-posts"><a title="Blogs Posts" href="/category-index/"><div class="icon"></div><span>Posts</span></a></li>
+            <li class="with-label" id="dock-projects"><a title="Projects by Thomas Hunter" href="/projects"><div class="icon"></div><span>Projects</span></a></li>
+            <li class="with-label" id="dock-about"><a href="/about" title="About Thomas Hunter"><div class="icon"></div><span>About</span></a></li>
+            <li class="with-label" id="dock-contact"><a title="E-Mail Thomas Hunter" href="#"><div class="icon"></div><span>Contact</span></a></li>
+            <li class="with-label" id="dock-search"><a title="Search over 300 posts" href="#"><div class="icon"></div><span>Search</span></a></li>
+            <li class="with-label" id="dock-github" class="external"><a title="Thomas Hunter Github" href="http://github.com/tlhunter"><div class="icon"></div><span>Github</span></a></li>
+            <li class="with-label" id="dock-twitter" class="external"><a title="Thomas Hunter Twitter" href="http://twitter.com/tlhunter"><div class="icon"></div><span>Twitter</span></a></li>
+        </ul>
+        <div id="topper"><a href="#top" title="Return to Top">&#8679;&nbsp;&#8679;&nbsp;&#8679;</a></div>
+    </nav>
+    <article>
+        <div id="popup-search" class="popup">
+            <form action="/search" method="post">
+                <input id="search" type="search" placeholder="Search Terms" />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+        <div id="popup-contact" class="popup">
+            <form action="/search" method="post">
+                <div class="fieldset"><input id="contact-name" name="name" type="text" placeholder="Name" /></div>
+                <div class="fieldset"><input id="contact-email" name="email" type="email" placeholder="Email Address" /></div>
+                <div class="fieldset"><textarea id="contact-message" name="message" placeholder="Message"></textarea></div>
+                <div class="fieldset submitter"><input type="submit" value="Send Mail" /></div>
+            </form>
+        </div>
+        <header>
+            <h1>The Upcoming Parallel Digital Universe</h1>
+            <time datetime="2012-12-01">December 1st, 2012</time>
+        </header>
+        <img src="sample.png" />
+        <p>Today I checked out Google Earth for the first time in a year. It's integrated into the Google Maps application now and displays via WebGL, which is badass in and of itself.</p>
+        <p>The picture from above is of Portland, Oregon. I zoomed in a lot and was able to simulate walking around the streets. As you can see, the visuals are rather funky looking, kinda melty. The meshes they're attached to aren't perfect either, like a super low-poly version of the building. I'm pretty sure someone had to go through and build them all by hand. I'd also guess that someone had to go through and take pictures of the sides of buildings, while the rooftops and streets and other horizontal imagery would have been taken from satellite imagery.</p>
+        <h2>Some Shit</h2>
+        <p>This is really a lot of work for a finite team of employees to do isn't it? At least the altitude information of the ground was something we've known for a long time, thanks to those folks doing survey stuff.</p>
+        <h3>A bulleted List</h3>
+        <ul>
+            <li>Pickles and Tacos oh my!</li>
+            <li>Pickles and Tacos oh my!</li>
+            <li>Pickles and Tacos oh my!</li>
+            <li>Pickles and Tacos oh my!</li>
+            <li>Pickles and Tacos oh my!</li>
+            <li>Pickles and Tacos oh my!</li>
+        </ul>
+        <h4>So many headings</h4>
+        <h5>So many headings</h5>
+        <p>When I was in <a href="#">Y Combinator</a>, one of the companies in my batch had this really badass product called <strong>Matterport</strong>, which would take imagery or video of the real world and build 3D meshes for you and apply the texture to the meshes, which could allow for some really fast 3D prototyping. Matterport is, however, a hardware solution, and likely won't be as ubiquitous as something like a cellphone.</p>
+<pre><code>console.log('boo', function() {
+    console.log('lolz');
+});</code></pre>
+        <p>Every photo currently taken by a smart phone has a bunch of meta-data tied to it (EXIF), which <em>contains information</em> such as GPS coordinates. Our phones are aware of more than the current location though; they also know cardinal directions, altitude, acceleration, and even to an extent their rotation in the 3 spacial directions. Say that Google gets your permissions to use the photos you take and apply them to this virtual world. As you take your photos and they're automatically sent to Google, you'll end up seeing your images applied in that imagionary world. As higher resolution, less blurry versions of images are uploaded, the "weaker" ones are slowly phased out. Images could be overlapped and have their opacity changed algorithmically to come up with the best possible versions. As people attempt to trick the system with fake images, they'll be overwhelmed with correct images.</p>
+        <blockquote>One could imagine a completed version of an under-construction building, sit on the couch next to a distant loved-one, play Rockband on stage in front of a crowded theater, or even interact with an AI controlled virtual girlfriend.</blockquote>
+        <p>Thus, a digital alternate reality could be easily built, crowdsourced from everyone taking simple pictures with their phones. And, if I know Google, this data will be available via API, so it can be used in various games, training applications, architectural markets, you name it.</p>
+        <p>Taking this a step further, we combine it with the Google Glass project, and by wearing these Augmented Reality capable glasses, you're able to walk around in a parallel universe. Things which cannot or do not yet exist in the real world can be superimposed in 3D space. One could imagine a completed version of an under-construction building, sit on the couch next to a distant loved-one, play Rockband on stage in front of a crowded theater, or even interact with an AI controlled virtual girlfriend. I haven't played it in years, but AR Pok&eacute;mon would be badass.</p>
+        <p>While this data could be useful for traditional computing devices, such as a PC or a Game Console, I see it being most beneficial with Augmented Reality. This 3D alternate reality could itself become a platform, games being built within it, instead of it being integrated into games. By controlling a HUD, one could pick the type of game to be played within this parallel world.</p>
+        <footer>
+            <h6>Comments (27)</h6>
+        </footer>
+    </article>
+</body>
+</html>
+
