@@ -116,6 +116,18 @@ nav ul li a span {
     display: block;
 }
 
+/* SEARCH */
+#search-results section h5 {
+    margin-bottom: 0rem;
+}
+#search-results section header time {
+    margin-bottom: 0.6rem;
+}
+#search-results section {
+    margin-bottom: 1rem;
+}
+
+
 /* CONTENT */
 article {
     max-width: 100rem;
