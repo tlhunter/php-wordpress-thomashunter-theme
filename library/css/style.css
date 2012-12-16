@@ -167,6 +167,30 @@ textarea#comment {
 #commentform input#submit {
     font-size: 1.6rem;
 }
+ol.commentlist ul.children {
+    list-style-type: none !important;
+}
+ol.commentlist header img {
+    float: left;
+}
+ol.commentlist header .comment-info {
+    float: left;
+}
+ol.commentlist header .comment-info cite {
+    font-weight: 700;
+}
+ol.commentlist header .comment-info cite,
+ol.commentlist header .comment-info time {
+    display: block;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+}
+ol.commentlist ul.children {
+    margin-top: 1rem !important;
+}
+ol.commentlist li.comment {
+    margin-bottom: 1rem;
+}
 
 /* CONTENT */
 section#main {
