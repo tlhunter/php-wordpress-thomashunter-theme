@@ -148,6 +148,7 @@ nav ul li a span {
 #projects .project span {
     display: block;
     text-align: center;
+    font-size: 1.8rem;
 }
 #projects .project br {
     /* Oh stupid Wordpress... */
