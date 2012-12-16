@@ -9,11 +9,11 @@ if ( have_posts() ) {
 ?>
         <header>
             <h1><?php the_title(); ?></h1>
+            <?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
         </header>
 
         <div class="posts-listing">
             <?php the_content(); ?>
-            <?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
             <?php
                 $cats = get_categories(array(
                     'order' => 'name',

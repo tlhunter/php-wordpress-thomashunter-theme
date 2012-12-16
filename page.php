@@ -6,7 +6,7 @@ if (have_posts()) {
 ?>
         <header>
             <h1><?php the_title(); ?></h1>
-            <time datetime="<?php the_time('Y-m-j') ?>"><?php the_time(get_option('date_format')) ?></time>
+            <?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
         </header>
         <?php the_content(); ?>
 <?php
