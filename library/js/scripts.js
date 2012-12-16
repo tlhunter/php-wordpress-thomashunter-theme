@@ -64,39 +64,39 @@ jQuery(document).ready(function($) {
     it, so be sure to research and find the one
     that works for you best.
     */
-    
+
     /* getting viewport width */
     var responsive_viewport = $(window).width();
-    
+
     /* if is below 481px */
     if (responsive_viewport < 481) {
-    
+
     } /* end smallest screen */
-    
+
     /* if is larger than 481px */
     if (responsive_viewport > 481) {
-        
+
     } /* end larger than 481px */
-    
+
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
-    
+
         /* load gravatars */
         $('.comment img[data-gravatar]').each(function(){
             $(this).attr('src',$(this).attr('data-gravatar'));
         });
-        
+
     }
-    
+
     /* off the bat large screen actions */
     if (responsive_viewport > 1030) {
-        
+
     }
-    
-	
+
+
 	// add all your scripts here
-	
- 
+
+
 }); /* end of as page load scripts */
 
 

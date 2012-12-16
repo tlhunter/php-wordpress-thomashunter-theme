@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: IE Stylesheet
 
@@ -12,7 +12,7 @@ without the media queries. No need to worry about editing anything!
 ******************************************************************/
 /*
 Remember, all the BASE styles are called already since IE can
-read those. Below, we need to import only the stuff IE can't 
+read those. Below, we need to import only the stuff IE can't
 understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
@@ -218,15 +218,15 @@ BUTTONS
     background-image: linear-gradient(to bottom, #1681c4, #1990db); }
 
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: 481px and Up Stylesheet
 
-This stylesheet is loaded for larger devices. It's set to 
+This stylesheet is loaded for larger devices. It's set to
 481px because at 480px it would load on a landscaped iPhone.
 This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection. 
+extra styles on that same mobile connection.
 
 A word of warning. This size COULD be a larger mobile device,
 so you still want to keep it pretty light and simply expand
@@ -411,17 +411,17 @@ mobile. Make sure to double check these!
 
 /* end .footer-links */
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Desktop Stylsheet
 
 This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
+be seen on the Desktop.
 
 ******************************************************************/
-/* 
-you can call the larger styles if you want, but there's really no need 
+/*
+you can call the larger styles if you want, but there's really no need
 */
 /******************************************************************
 ADDITIONAL IE FIXES
