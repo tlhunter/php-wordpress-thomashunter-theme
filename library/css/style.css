@@ -136,6 +136,24 @@ nav ul li a span {
     color: #006fff;
 }
 
+/* PROJECTS */
+#projects .project {
+    float: left;
+    width: 24rem;
+    margin: 0 1rem 2rem 0;
+}
+#projects .project img {
+    margin-bottom: 0;
+}
+#projects .project span {
+    display: block;
+    text-align: center;
+}
+#projects .project br {
+    /* Oh stupid Wordpress... */
+    display: none;
+}
+
 
 /* CONTENT */
 article {
