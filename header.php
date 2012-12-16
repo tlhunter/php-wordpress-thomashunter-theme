@@ -42,7 +42,7 @@ if (isset($current_page_override)) {
         </ul>
         <div id="topper"><a href="#top" title="Return to Top">&#8679;&nbsp;&#8679;&nbsp;&#8679;</a></div>
     </nav>
-    <article>
+    <section id="main">
         <div id="popup-search" class="popup">
             <form action="<?=site_url();?>" method="get">
                 <input id="search" type="search" name="s" placeholder="Search Terms" />

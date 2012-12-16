@@ -5,7 +5,7 @@ get_header();
     <header>
         <h1>Search Results For: <?php echo esc_attr(get_search_query()); ?></h1>
     </header>
-    <div id="search-results">
+    <article id="search-results">
 <?php
 if (have_posts()) {
     while (have_posts()) {
@@ -22,7 +22,7 @@ if (have_posts()) {
     }
 }
 ?>
-    </div>
+    </article>
 <?php
 $max_pages = $wp_query->max_num_pages;
 if ($max_pages > 1) {

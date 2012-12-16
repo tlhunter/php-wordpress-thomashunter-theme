@@ -12,7 +12,7 @@ if ( have_posts() ) {
             <?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
         </header>
 
-        <div class="posts-listing">
+        <article class="posts-listing">
             <?php the_content(); ?>
             <?php
                 $cats = get_categories(array(
@@ -40,7 +40,7 @@ if ( have_posts() ) {
 
             ?>
 
-        </div>
+        </article>
 <?php
     }
 }

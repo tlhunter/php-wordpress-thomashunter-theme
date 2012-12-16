@@ -108,7 +108,7 @@ nav ul li a span {
     margin-bottom: 2rem;
 }
 #post-listing section h3 {
-    margin-bottom: 0rem;
+    margin-bottom: 0rem !important;
 }
 #post-listing section time {
     font-size: 1.6rem;
@@ -118,10 +118,13 @@ nav ul li a span {
 
 /* SEARCH */
 #search-results section h5 {
-    margin-bottom: 0rem;
+    margin-bottom: 0rem !important;
 }
 #search-results section header time {
     margin-bottom: 0.6rem;
+    font-size: 1.6rem;
+    color: #8b9aa0;
+    display: block;
 }
 #search-results section {
     margin-bottom: 1rem;
@@ -155,9 +158,18 @@ nav ul li a span {
     display: none;
 }
 
+/* COMMENTS */
+textarea#comment {
+    width: 100%;
+    height: 20rem;
+    font-size: 1.6rem;
+}
+#commentform input#submit {
+    font-size: 1.6rem;
+}
 
 /* CONTENT */
-article {
+section#main {
     max-width: 100rem;
     min-width: 20rem;
     margin: 0 1.6rem 0 8.0rem;
@@ -168,107 +180,111 @@ article {
     font-weight: 300;
     line-height: 2.8rem;
 }
-article header h1 {
+section#main > header > h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-article header {
+section#main > header {
     margin: 0 0 1.6rem 0;
 }
-article header time {
+section#main > header > time {
     font-size: 1.6rem;
     color: #8b9aa0;
     display: block;
 }
-article footer {
+section#main > footer {
     border-top: 0.1rem solid #ddd;
     padding-top: 1rem;
 }
 
 
 /* FREE CONTENT */
-article p,
-article ul,
-article ol,
-article pre,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6,
-article .wp-caption,
-article footer,
-article blockquote {
+section#main p,
+section#main ul,
+section#main ol,
+section#main pre,
+section#main h2,
+section#main h3,
+section#main h4,
+section#main h5,
+section#main h6,
+section#main .wp-caption,
+section#main footer,
+section#main blockquote {
     margin: 0 0 1.6rem 0;
 }
-article ul {
+section#main ul {
     list-style-type: circle;
 }
-article ul li {
+section#main ul li {
     margin-left: 3rem;
 }
-article p {
+section#main p {
 }
-article img {
+section#main img {
     max-width: 100%;
     margin: 0 0 1.6rem 0;
 }
-article blockquote {
+section#main blockquote {
     color: #888;
     border-left: 0.5rem solid #999;
     padding-left: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
-article a {
+section#main a {
     color: #006fff;
 }
-article strong,
-article b {
+section#main strong,
+section#main b {
     font-weight: 700;
 }
-article em,
-article i {
+section#main em,
+section#main i {
     font-style: italic;
 }
-article pre {
+section#main pre {
     font-family: Menlo, monospace;
     font-size: 1.5rem;
     background-color: #eee;
     padding: 1rem 1.8rem;
     overflow: auto;
 }
-article h2,
-article h3,
-article h4 {
+section#main h2,
+section#main h3,
+section#main h4 {
     font-weight: 700;
 }
-article h2 {
+section#main h2 {
     font-size: 2.6rem;
     border-bottom: 0.1rem dotted #999;
 }
-article h3 {
+section#main h3 {
     font-size: 2.6rem;
 }
-article h4 {
+section#main h4 {
     font-size: 2.4rem;
 }
-article h5 {
+section#main h5 {
     font-size: 2.2rem;
 }
-article h6 {
+section#main h6 {
     font-size: 2.0rem;
 }
 
-article .aligncenter {
+section#main .aligncenter {
     margin: 0 auto;
     text-align: center;
 }
-article .wp-caption img {
+section#main .wp-caption img {
     margin-bottom: 0;
 }
-article .wp-caption p {
+section#main .wp-caption p {
     font-size: 1.5rem;
     color: #999;
+}
+.small,
+small {
+    font-size: 0.85em;
 }
