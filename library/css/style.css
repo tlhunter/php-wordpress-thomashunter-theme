@@ -127,6 +127,15 @@ nav ul li a span {
     margin-bottom: 1rem;
 }
 
+/* ALL POSTS */
+.posts-listing .category .toggle {
+    display: none;
+}
+.posts-listing .category h4 {
+    cursor: pointer;
+    color: #006fff;
+}
+
 
 /* CONTENT */
 article {

@@ -21,6 +21,9 @@ $(function() {
             scrollTop: 0
         }, 500);
     });
+    $('.posts-listing .category h4 ').click(function() {
+        $(this).parent('.category').find('.toggle').slideToggle(350);
+    });
 });
 
 /*
