@@ -9,6 +9,18 @@ if (have_posts()) {
             <h1><?php the_title(); ?></h1>
             <time datetime="<?php the_time('Y-m-j') ?>"><?php the_time(get_option('date_format')) ?></time>
         </header>
+<?php
+if ( has_post_thumbnail() ) {
+?>
+        <section id="featured-image">
+<?php
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+?>
+<img src="<?php echo $thumbnail['0']; ?>" />
+        </section>
+<?php
+}
+?>
         <article>
         <?php the_content(); ?>
         </article>
