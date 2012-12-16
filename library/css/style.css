@@ -221,7 +221,9 @@ section#main > footer {
     border-top: 0.1rem solid #ddd;
     padding-top: 1rem;
 }
-
+#featured-image {
+    text-align: center;
+}
 
 /* FREE CONTENT */
 section#main p,
