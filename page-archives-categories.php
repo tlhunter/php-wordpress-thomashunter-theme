@@ -4,7 +4,7 @@
 */
 get_header();
 if ( have_posts() ) {
-    while ( have_posts() ) {
+    if ( have_posts() ) {
         the_post();
 ?>
         <header>
@@ -15,7 +15,11 @@ if ( have_posts() ) {
             <?php the_content(); ?>
             <?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
             <?php
-                $cats = get_categories();
+                $cats = get_categories(array(
+                    'order' => 'name',
+                    'order' => 'asc',
+                    'pad_counts' => false,
+                ));
                 foreach ( $cats as $cat ){
                     echo "<div class='category'>\n";
                     echo "<h4>" . $cat->name . " (". $cat->count .")</h4>\n";
@@ -25,8 +29,8 @@ if ( have_posts() ) {
                             printf("%s", $category_description);
                     }
                     echo "<ul>";
-                    $myposts = get_posts( array( 'cat' => $cat->term_id, 'posts_per_page' => -1 ) );
-                    foreach( $myposts as $post ) { ?>
+                    query_posts( array( 'category__in' => $cat->term_id, 'posts_per_page' => -1 ) );
+                    while(have_posts()) { the_post();?>
                         <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                     <?php } // end foreach
                     echo "</ul>\n";

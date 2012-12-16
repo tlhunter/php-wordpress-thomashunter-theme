@@ -3,7 +3,6 @@ $current_page_override = 'post';
 get_header();
 
 if (have_posts()) {
-    while (have_posts()) {
         the_post();
 ?>
         <header>
@@ -18,7 +17,6 @@ if (have_posts()) {
             <?php comments_template(); ?>
         </footer>
 <?php
-    }
 }
 get_footer();
 ?>
