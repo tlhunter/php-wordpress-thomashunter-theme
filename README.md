@@ -14,6 +14,12 @@ GentleFace (http://www.gentleface.com/free_icon_set.html).
 * Disable emoticons
 * Disable toolbar
 * Homepage listing of last X blogposts
+* Install "Microkid's Related Posts"
+ * Show as H3 tags
+ * Show nothing if no related posts
+ * No Thumbnail
+ * Disable for Pages and Custom Types
+ * Choose option to use your own CSS
 
 # Pitfalls
 
