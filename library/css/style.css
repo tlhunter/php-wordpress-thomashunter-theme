@@ -277,6 +277,9 @@ section#main pre {
     padding: 1rem 1.8rem;
     overflow: auto;
 }
+section#main pre code {
+    padding: 0;
+}
 section#main h2,
 section#main h3,
 section#main h4 {

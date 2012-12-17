@@ -21,7 +21,7 @@ GentleFace (http://www.gentleface.com/free_icon_set.html).
  * Disable for Pages and Custom Types
  * Choose option to use your own CSS
 * Install "wp-highlight.js"
- * Color Scheme: cs.css
+ * Color Scheme: vs.css
 
 # Pitfalls
 
