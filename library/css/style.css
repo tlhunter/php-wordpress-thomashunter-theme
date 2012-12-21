@@ -194,7 +194,7 @@ ol.commentlist li.comment {
 
 /* CONTENT */
 section#main {
-    max-width: 100rem;
+    /*max-width: 100rem;*/
     min-width: 20rem;
     margin: 0 1.6rem 0 8.0rem;
     padding: 1.6rem 0 0 0;
