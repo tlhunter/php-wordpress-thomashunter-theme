@@ -14,7 +14,6 @@
     <!--<link rel="stylesheet" type="text/css" href="library/css/style.css" />-->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
     <script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/jquery-1.8.3.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/library/js/scripts.js"></script>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <!-- wordpress head functions -->
     <?php wp_head(); ?>
