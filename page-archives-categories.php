@@ -28,6 +28,7 @@ if ( have_posts() ) {
                         if ( ! empty( $category_description ) ) {
                             printf("%s", $category_description);
                     }
+                    echo "<h5><a href=\"http://localhost/thomashunter.name/blog/category/" . $cat->slug . "/\">Permalink</a></h5>\n";
                     echo "<ul>";
                     query_posts( array( 'category__in' => $cat->term_id, 'posts_per_page' => -1 ) );
                     while(have_posts()) { the_post();?>
