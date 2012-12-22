@@ -5,7 +5,7 @@ get_header();
 <?php if (is_category()) { ?>
     <h1>Posts Categorized As <?php single_cat_title(); ?></h1>
 <?php } elseif (is_tag()) { ?>
-    <h1>Posts Taggee As <?php single_tag_title(); ?></h1>
+    <h1>Posts Tagged As <?php single_tag_title(); ?></h1>
 <?php } elseif (is_author()) {
     global $post;
     $author_id = $post->post_author;
