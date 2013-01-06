@@ -243,6 +243,9 @@ section#main blockquote {
 section#main ul {
     list-style-type: circle;
 }
+section#main ul li ul {
+    margin-bottom: 0;
+}
 section#main ul li {
     margin-left: 3rem;
 }
