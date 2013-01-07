@@ -198,7 +198,7 @@ section#main {
     min-width: 20rem;
     margin: 0 1.6rem 0 8.0rem;
     padding: 1.6rem 0 0 0;
-    color: #4e565a;
+    color: #000;
     font-family: "Lato", "freight-sans-pro","Myriad Pro","Myriad",sans-serif;
     font-size: 2rem;
     font-weight: 300;
@@ -256,7 +256,7 @@ section#main img {
     margin: 0 0 1.6rem 0;
 }
 section#main blockquote {
-    color: #888;
+    color: #666;
     border-left: 0.5rem solid #999;
     padding-left: 1rem;
     margin-left: 3rem;
