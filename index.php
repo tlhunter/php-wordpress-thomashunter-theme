@@ -1,3 +1,7 @@
+<header>
+	<h1>Thomas Hunter</h1>
+	<p>Programmer</p>
+</header>
 <?php
 $current_page_override = 'home';
 get_header();
