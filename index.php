@@ -1,11 +1,11 @@
-<header>
-	<h1>Thomas Hunter</h1>
-	<p>Programmer</p>
-</header>
 <?php
 $current_page_override = 'home';
 get_header();
 ?>
+<header>
+	<h1>Thomas Hunter</h1>
+	<p>Programmer, Writer, Artist.</p>
+</header>
 <article id="post-listing">
 <?php
 if (have_posts()) {
