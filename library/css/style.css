@@ -316,6 +316,9 @@ section#main .wp-caption p {
     font-size: 1.5rem;
     color: #999;
 }
+.wp-caption.aligncenter {
+	display: inline-block;
+}
 .small,
 small {
     font-size: 0.85em;
