@@ -306,8 +306,10 @@ section#main h6 {
 }
 
 section#main .aligncenter {
-    margin: 0 auto;
-    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
 }
 section#main .wp-caption img {
     margin-bottom: 0;
@@ -316,7 +318,8 @@ section#main .wp-caption p {
     font-size: 1.5rem;
     color: #999;
 }
-.wp-caption.aligncenter {
+.wp-caption.aligncenter,
+.wp-caption.alignleft {
 	display: inline-block;
 }
 .small,
