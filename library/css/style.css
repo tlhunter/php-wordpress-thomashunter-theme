@@ -61,6 +61,7 @@ nav ul li a span {
 #dock-search .icon { background-image: url("../images/dock/search-32.png"); }
 #dock-github .icon { background-image: url("../images/dock/github-32.png"); }
 #dock-twitter .icon { background-image: url("../images/dock/twitter-32.png"); }
+#dock-donate .icon { background-image: url("../images/dock/donate-32.png"); }
 #topper {
     position: absolute;
     bottom: 0px;
