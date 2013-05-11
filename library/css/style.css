@@ -280,6 +280,7 @@ section#main pre {
     background-color: #eee;
     padding: 1rem 1.8rem;
     overflow: auto;
+	tab-size: 4;
 }
 section#main pre code {
     padding: 0;
