@@ -3,8 +3,8 @@ $current_page_override = 'home';
 get_header();
 ?>
 <header>
-	<h1>Thomas Hunter</h1>
-	<p>Programmer, Writer, Artist.</p>
+	<h1><?php bloginfo('name'); ?></h1>
+	<p><?php bloginfo('description'); ?></p>
 </header>
 <article id="post-listing">
 <?php
