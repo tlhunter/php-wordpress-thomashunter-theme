@@ -328,3 +328,6 @@ section#main .wp-caption p {
 small {
     font-size: 0.85em;
 }
+.author-name {
+	display: none;
+}
