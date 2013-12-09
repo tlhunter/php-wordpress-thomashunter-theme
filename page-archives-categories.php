@@ -22,13 +22,12 @@ if ( have_posts() ) {
                 ));
                 foreach ( $cats as $cat ){
                     echo "<div class='category'>\n";
-                    echo "<h4>" . $cat->name . " (". $cat->count .")</h4>\n";
+                    echo "<h4><a href=\"/blog/category/" . $cat->slug . "/\">" . $cat->name . " (". $cat->count .")</a></h4>\n";
                     echo "<div class='toggle'>\n";
                     $category_description = category_description( $cat->term_id );
                         if ( ! empty( $category_description ) ) {
                             printf("%s", $category_description);
                     }
-                    echo "<h5><a href=\"/blog/category/" . $cat->slug . "/\">Permalink</a></h5>\n";
                     echo "<ul>";
                     query_posts( array( 'category__in' => $cat->term_id, 'posts_per_page' => -1 ) );
                     while(have_posts()) { the_post();?>

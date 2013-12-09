@@ -1,3 +1,31 @@
+$(function() {
+    var $searchInput = $('#search');
+    var $search = $('#popup-search');
+    var isSearchVisible = false;
+    $('#dock-search').click(function(event) {
+        event.preventDefault();
+
+        if (isSearchVisible) {
+            isSearchVisible = false;
+            $search.fadeOut('fast');
+        } else {
+            isSearchVisible = true;
+            $search.fadeIn('fast');
+            $searchInput.focus();
+        }
+    });
+    $('#topper a').click(function(event) {
+        event.preventDefault();
+
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+    });
+    $('.posts-listing .category h4 ').click(function() {
+        $(this).parent('.category').find('.toggle').slideToggle(350);
+    });
+});
+
 /*
 Bones Scripts File
 Author: Eddie Machado

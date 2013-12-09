@@ -3,6 +3,7 @@ $current_page_override = 'home';
 get_header();
 ?>
 <header>
+	<img alt="<?php the_title(); ?>" src="//www.gravatar.com/avatar/e79802a826a113cdb9c49f5d04dc6946.png?s=256" />
 	<h1><?php bloginfo('name'); ?></h1>
 	<p><?php bloginfo('description'); ?></p>
 </header>

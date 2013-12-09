@@ -74,7 +74,6 @@ The comments page for Bones
         <textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'bonestheme'); ?>" tabindex="4"></textarea>
         <input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e('Submit', 'bonestheme'); ?>" />
         <?php comment_id_fields(); ?>
-        <p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags', 'bonestheme'); ?>: <code><?php echo allowed_tags(); ?></code></p>
         <?php do_action('comment_form', $post->ID); ?>
     </form>
 
