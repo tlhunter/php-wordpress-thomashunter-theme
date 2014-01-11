@@ -37,6 +37,7 @@ if (isset($current_page_override)) {
             <li class="with-label<?php if ($slug == 'projects') { echo " active"; } ?>" id="dock-projects"><a title="Projects by Thomas Hunter II" href="<?=site_url();?>/projects"><div class="icon"></div><span>Projects</span></a></li>
             <li class="with-label<?php if ($slug == 'about') { echo " active"; } ?>" id="dock-about"><a href="<?=site_url();?>/about" title="About Thomas Hunter II"><div class="icon"></div><span>About</span></a></li>
             <li class="with-label<?php if ($slug == 'available-for-talks') { echo " active"; } ?>" id="dock-talks"><a title="I'm Available for Talks" href="<?=site_url();?>/available-for-talks"><div class="icon"></div><span>Talks</span></a></li>
+            <li class="with-label<?php if ($slug == 'books') { echo " active"; } ?>" id="dock-books"><a title="Books I've Written" href="<?=site_url();?>/books"><div class="icon"></div><span>Books</span></a></li>
         </ul>
         <div id="popup-search" class="popup">
             <form action="<?=site_url();?>" method="get">
